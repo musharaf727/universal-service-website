@@ -3,43 +3,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://YOUR-VERCEL-DOMAIN.vercel.app/</loc>
+        <loc>https://universal-service-website.vercel.app/</loc>
         <priority>1.0</priority>
     </url>
 
     <url>
-        <loc>https://YOUR-VERCEL-DOMAIN.vercel.app/services/ac-repair.html</loc>
-        <priority>0.9</priority>
+        <loc>https://universal-service-website.vercel.app/services/ac-repair.html</loc>
+        <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://YOUR-VERCEL-DOMAIN.vercel.app/services/ac-installation.html</loc>
-        <priority>0.9</priority>
+        <loc>https://universal-service-website.vercel.app/services/ac-installation.html</loc>
+        <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://YOUR-VERCEL-DOMAIN.vercel.app/services/ac-servicing.html</loc>
-        <priority>0.9</priority>
+        <loc>https://universal-service-website.vercel.app/services/ac-servicing.html</loc>
+        <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://YOUR-VERCEL-DOMAIN.vercel.app/services/refrigerator-repair.html</loc>
-        <priority>0.9</priority>
+        <loc>https://universal-service-website.vercel.app/services/refrigerator-repair.html</loc>
+        <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://YOUR-VERCEL-DOMAIN.vercel.app/services/washing-machine-repair.html</loc>
-        <priority>0.9</priority>
+        <loc>https://universal-service-website.vercel.app/services/washing-machine-repair.html</loc>
+        <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://YOUR-VERCEL-DOMAIN.vercel.app/services/water-cooler-repair.html</loc>
-        <priority>0.9</priority>
+        <loc>https://universal-service-website.vercel.app/services/water-cooler-repair.html</loc>
+        <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://YOUR-VERCEL-DOMAIN.vercel.app/services/other-appliances.html</loc>
-        <priority>0.9</priority>
+        <loc>https://universal-service-website.vercel.app/services/other-appliances.html</loc>
+        <priority>0.8</priority>
     </url>
 
 </urlset>
