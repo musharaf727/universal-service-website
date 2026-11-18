@@ -437,3 +437,82 @@ function renderServicePage() {
 // ============================================
 
 renderServicePage();
+
+/* ========================================
+   GALLERY FULL-SCREEN IMAGE VIEWER
+======================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const galleryImages = document.querySelectorAll(".gallery-item img");
+
+    if (!galleryImages.length) {
+        return;
+    }
+
+    // Create the lightbox
+    const lightbox = document.createElement("div");
+    lightbox.className = "gallery-lightbox";
+
+    lightbox.innerHTML = `
+        <button
+            class="gallery-lightbox-close"
+            aria-label="Close image viewer"
+            type="button">
+            &times;
+        </button>
+
+        <img
+            class="gallery-lightbox-image"
+            src=""
+            alt="Universal Service gallery image">
+    `;
+
+    document.body.appendChild(lightbox);
+
+    const lightboxImage = lightbox.querySelector(".gallery-lightbox-image");
+    const closeButton = lightbox.querySelector(".gallery-lightbox-close");
+
+    // Open image when a gallery photo is clicked
+    galleryImages.forEach(function (image) {
+
+        image.addEventListener("click", function () {
+
+            lightboxImage.src = image.src;
+            lightboxImage.alt = image.alt || "Universal Service work photo";
+
+            lightbox.classList.add("active");
+            document.body.style.overflow = "hidden";
+
+        });
+
+    });
+
+    // Close image viewer
+    function closeLightbox() {
+        lightbox.classList.remove("active");
+        lightboxImage.src = "";
+        document.body.style.overflow = "";
+    }
+
+    closeButton.addEventListener("click", closeLightbox);
+
+    // Close when clicking outside the image
+    lightbox.addEventListener("click", function (event) {
+
+        if (event.target === lightbox) {
+            closeLightbox();
+        }
+
+    });
+
+    // Close with Escape key
+    document.addEventListener("keydown", function (event) {
+
+        if (event.key === "Escape" && lightbox.classList.contains("active")) {
+            closeLightbox();
+        }
+
+    });
+
+});
